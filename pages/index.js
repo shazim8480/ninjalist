@@ -13,8 +13,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <h1>Hello world</h1>
-          <p>
+          <h1 className={styles.title}>Homepage</h1>
+          <p className={styles.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus odio culpa inventore, asperiores est placeat explicabo
             officiis, suscipit delectus cupiditate, vero in tenetur dolorum
@@ -24,14 +24,14 @@ export default function Home() {
             reiciendis.
           </p>
 
-          <p>
+          <p className={styles.text}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
             laborum, labore veniam vel saepe reiciendis voluptatum. Quibusdam
             vel quam officia.
           </p>
 
           <Link href="/ninjas">
-            <a>See Ninja Listing</a>
+            <a className={styles.btn}>See Ninja Listing</a>
           </Link>
         </div>
       </main>
