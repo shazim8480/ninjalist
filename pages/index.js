@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Navbar from "../comps/Navbar";
-import Footer from "../comps/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar />
         <div>
           <h1>Hello world</h1>
           <p>
@@ -31,8 +29,11 @@ export default function Home() {
             laborum, labore veniam vel saepe reiciendis voluptatum. Quibusdam
             vel quam officia.
           </p>
+
+          <Link href="/ninjas">
+            <a>See Ninja Listing</a>
+          </Link>
         </div>
-        <Footer />
       </main>
     </div>
   );
